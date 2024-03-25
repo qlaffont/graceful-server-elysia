@@ -24,4 +24,4 @@ jobs:
         run: bun test
 
       - name: Build
-        run: pnpm build
+        run: bun build
