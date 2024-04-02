@@ -1,6 +1,6 @@
 {
   "name": "graceful-server-elysia",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "files": [
     "dist",
     "src"
@@ -13,7 +13,7 @@
     "lint": "eslint src test",
     "build": "tsup src/index.ts"
   },
-  "dependencies": {
+  "peerDependencies": {
     "elysia": "latest"
   },
   "devDependencies": {
