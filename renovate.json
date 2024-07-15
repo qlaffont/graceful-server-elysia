@@ -4,5 +4,28 @@
     "config:recommended"
   ],
   "automergeType": "pr",
-  "automerge": true
+  "automerge": true,
+  "ignoreDeps": [
+    "@jest/globals",
+    "@types/node",
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser",
+    "eslint",
+    "eslint-config-prettier",
+    "eslint-plugin-import",
+    "eslint-plugin-prettier",
+    "eslint-plugin-simple-import-sort",
+    "prettier",
+    "husky",
+    "ts-jest",
+    "tsdx",
+    "tslib",
+    "typescript",
+    "tsup",
+    "@babel/core",
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    "jest",
+    "jest-environment-jsdom"
+  ]
 }
