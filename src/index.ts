@@ -44,7 +44,7 @@ export const pluginGracefulServer = (userConfig: PluginGracefulServer = {}) => {
     .state('startedSince', Date.now())
 
     .get(
-      '/ready',
+      config.readinessEndpoint,
       () => {
         if (global.gracefulServerIsReady) {
           return {
@@ -65,7 +65,7 @@ export const pluginGracefulServer = (userConfig: PluginGracefulServer = {}) => {
     )
 
     .get(
-      '/live',
+      config.livenessEndpoint,
       ({ store: { startedSince } }) => {
         return {
           uptime: Math.round((Date.now() - startedSince) / 1000),

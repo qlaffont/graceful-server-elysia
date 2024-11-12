@@ -60,14 +60,12 @@ describe('Graceful server', () => {
     });
 
     it('Custom /live', async () => {
-      const { status } = await customApi.live.get();
-
+      const { status } = await customApi['custom-live'].get();
       expect(status).not.toBe(404);
     });
 
     it('Custom /ready', async () => {
-      const { status } = await customApi.ready.get();
-
+      const { status } = await customApi['custom-ready'].get();
       expect(status).not.toBe(404);
     });
 
